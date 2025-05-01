@@ -57,7 +57,7 @@ Finally we copy over an example input and run the job using Singularity.
 ```
 cp -r /cm/shared/examples/sdsc/excerpt/input .
 mkdir output
-singularity run --bind ./input:/exceRptInput --bind ./output:/exceRptOutput --bind /expanse/projects/qstore/data/excerpt/hg38:/exceRpt_DB/hg38 /cm/shared/apps/containers/singularity/excerpt/excerpt.sif INPUT_FILE_PATH=/exceRptInput/SRR026761.sra
+singularity run --bind ./input:/exceRptInput --bind ./output:/exceRptOutput --bind /expanse/projects/qstore/data/excerpt/hg38:/exceRpt_DB/hg38 --bind /scratch:/scratch /cm/shared/apps/containers/singularity/excerpt/excerpt.sif INPUT_FILE_PATH=/exceRptInput/SRR026761.sra
 ```
 
 ### Command Set #4 ###
