@@ -1,17 +1,20 @@
 ### Command Set #1 ###
-
+<br>
+Lets start with using module commands to search for the MATLAB software available. We can then check which environment variables are changed when one of these modules is loaded.
+```
 module spider matlab
-
 module show matlab/2022b
-
+```
+<br>
+Next we look for the ADIOS2 IO library and check for the dependencies that are needed to be loaded and the check the module dependencies that are automatically loaded.
+```
 module spider adios2
-
 module reset
 module load cpu/0.17.3b  gcc/10.2.0/npcyll4  openmpi/4.1.3/oq3qvsv
 module load adios2/2.7.1
 module list
 module show adios2/2.7.1
-
+```
 ### Command Set #2 ###
 
 cp -r /cm/shared/examples/sdsc/pytorch .
