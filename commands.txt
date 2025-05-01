@@ -1,9 +1,11 @@
 ### Command Set #1 ###
 
+Lets start by looking for the MATLAB software package and use module commands to see which environment variables are changed.
+
+```
 module spider matlab
-
 module show matlab/2022b
-
+```
 module spider adios2
 
 module reset
